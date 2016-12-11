@@ -3,10 +3,10 @@ description: Engine
 keywords: Engine
 redirect_from:
 - /engine/misc/
-title: About Docker Engine
+title: 关于Docker引擎
 ---
 
-**Develop, Ship and Run Any Application, Anywhere**
+**在任何地方，开发、交付并运行任何应用**
 
 [**Docker**](https://www.docker.com) is a platform for developers and sysadmins
 to develop, ship, and run applications.  Docker lets you quickly assemble
@@ -113,3 +113,5 @@ The complete list of deprecated features can be found on the
 Docker is licensed under the Apache License, Version 2.0. See
 [LICENSE](https://github.com/docker/docker/blob/master/LICENSE) for the full
 license text.
+
+

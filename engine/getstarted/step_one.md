@@ -1,84 +1,84 @@
 ---
-description: Getting started with Docker
+description: Docker 入门
 keywords: beginner, getting started, Docker, install
 redirect_from:
 - /mac/step_one/
 - /windows/step_one/
 - /linux/step_one/
-title: Install Docker and run hello-world
+title: 安装 Docker 并运行 hello-world
 ---
 
-- [Step 1: Get Docker](#step-1-get-docker)
-- [Step 2: Install Docker](#step-2-install-docker)
-- [Step 3: Verify your installation](#step-3-verify-your-installation)
+- [第一步：获取 Docker](#step-1-get-docker)
+- [第二步：安装 Docker](#step-2-install-docker)
+- [第三步：验证安装](#step-3-verify-your-installation)
 
-## Step 1: Get Docker
+## 第一步：获取 Docker
 
 ### Docker for Mac
 
-Docker for Mac is our newest offering for the Mac. It runs as a native Mac application and uses <a href="https://github.com/mist64/xhyve/" target="_blank">xhyve</a> to virtualize the Docker Engine environment and Linux kernel-specific features for the Docker daemon.
+Docker for Mac 是在 Mac 上的最新选择。它以原生 Mac 应用方式运行并使用 <a href="https://github.com/mist64/xhyve/" target="_blank">xhyve</a> 虚拟化技术来支持 Docker Engine 环境和 Docker 守护进程所需 Linux 内核相关特性。
 
-<a class="button" href="https://download.docker.com/mac/stable/Docker.dmg">Get Docker for Mac</a>
+<a class="button" href="https://download.docker.com/mac/stable/Docker.dmg">获取 Docker for Mac</a>
 
-**Requirements**
+**需求**
 
-- Mac must be a 2010 or newer model, with Intel's hardware support for memory management unit (MMU) virtualization; i.e., Extended Page Tables (EPT)
+- Mac 必须是 2010 年或之后型号，包含Intel的内存管理单元（memory management unit - MMU）虚拟化的硬件支持; 比如, 扩展页面表（Extended Page Tables - EPT）
 
-- macOS 10.10.3 Yosemite or newer
+- macOS 10.10.3 Yosemite 或更高版本
 
-- At least 4GB of RAM
+- 至少 4GB 内存
 
-- VirtualBox prior to version 4.3.30 must NOT be installed (it is incompatible with Docker for Mac). Docker for Mac will error out on install in this case. Uninstall the older version of VirtualBox and re-try the install.
+- 早于 4.3.30 版本的 VirtualBox 必须没有被安装（与 Docker for Mac 不兼容）。 否则 Docker for Mac 会在安装时报错。卸载老版本 VirtualBox 并重试安装。
 
-#### Docker Toolbox for the Mac
+#### Docker Toolbox 的 Mac 版本 
 
-If you have an earlier Mac that doesn't meet the Docker for Mac prerequisites, <a href="https://www.docker.com/products/docker-toolbox" target="_blank">get Docker Toolbox</a> for the Mac.
+如果你所拥有的早期 Mac 无法满足 Docker for Mac 的先决条件， 请<a href="https://www.docker.com/products/docker-toolbox" target="_blank">获取 Docker Toolbox</a> 。
 
-See [Docker Toolbox Overview](/toolbox/overview.md) for help on installing Docker with Toolbox.
+参见 [Docker Toolbox 简介](/toolbox/overview.md) 来安装 Docker 。
 
 ### Docker for Windows
 
-Docker for Windows is our newest offering for PCs. It runs as a native Windows application and uses Hyper-V to virtualize the Docker Engine environment and Linux kernel-specific features for the Docker daemon.
+Docker for Mac 是在 PC 上的最新选择。它以原生 Windows 应用方式运行并使用  Hyper-V 虚拟化技术来支持 Docker Engine 环境和 Docker 守护进程所需 Linux 内核相关特性。
 
-<a class="button" href="https://download.docker.com/win/stable/InstallDocker.msi">Get Docker for Windows</a>
+<a class="button" href="https://download.docker.com/win/stable/InstallDocker.msi">获取 Docker for Windows</a>
 
-**Requirements**
+**需求**
 
-* 64bit Windows 10 Pro, Enterprise and Education (1511 November update, Build 10586 or later). In the future we will support more versions of Windows 10.
+* 64位 Windows 10 专业版, 企业版和教育版（1511 November update, Build 10586 或更高版本）。 在未来会支持更多的 Windows 10 版本。
 
-* The Hyper-V package must be enabled. The Docker for Windows installer will enable it for you, if needed. (This requires a reboot).
+* Hyper-V 支持必须开启。如果需要，Docker for Windows 安装程序会自动开启相应支持。（需要重启）
 
-#### Docker Toolbox for Windows
+#### Docker Toolbox 的 Windows 版本 
 
-If you have an earlier Windows system that doesn't meet the Docker for Windows prerequisites, <a href="https://www.docker.com/products/docker-toolbox" target="_blank">get Docker Toolbox</a>.
+如果你所拥有的 Windows 系统无法满足 Docker for Windows 的先决条件， 请<a href="https://www.docker.com/products/docker-toolbox" target="_blank">获取 Docker Toolbox</a> 。
 
-See [Docker Toolbox Overview](/toolbox/overview.md) for help on installing Docker with Toolbox.
+参见 [Docker Toolbox 简介](/toolbox/overview.md) 来安装 Docker 。
 
 ### Docker for Linux
-Docker Engine runs natively on Linux distributions.
+Docker Engine 可以在 Linux 发行版上原生运行.
 
-For full instructions on getting Docker for various Linux distributions, see [Install Docker Engine](/engine/installation/index.md).
+关于在不同 Linux 发行版上支持 Docker 的详细描述, 参见 [安装 Docker Engine](/engine/installation/index.md).
 
-## Step 2: Install Docker
+## 第二步：安装 Docker
 
-- **Docker for Mac** - Install instructions are at [Getting Started with Docker for Mac](/docker-for-mac/).
+- **Docker for Mac** - 参见 [Docker for Mac 指南](/docker-for-mac/)中安装介绍。
 
-- **Docker for Windows** - Install instructions are at [Getting Started with Docker for Windows](/docker-for-windows/).
+- **Docker for Windows** - 参见 [Docker for Windows 指南](/docker-for-windows/)中安装介绍。
 
-- **Docker Toolbox** - Install instructions are at [Docker Toolbox Overview](/toolbox/overview.md).
+- **Docker Toolbox** - 参见 [Docker Toolbox Overview 指南](/toolbox/overview.md)中安装介绍。
 
-- **Docker on Linux** - For a simple example of installing Docker on Ubuntu Linux so that you can work through this tutorial, see [Installing Docker on Ubuntu Linux (Example)](linux_install_help.md). Full install instructions for all flavors of Linux we support are at [Install Docker Engine](/engine/installation/index.md).
+- **Docker on Linux** - 这个指南通过简单示例介绍了在 Ubuntu Linux 上安装 Docker。参见 [在 Ubuntu Linux 上安装 Docker（示例）](linux_install_help.md)。在所有支持的 Linux 发行版上的详细安装介绍在 [安装 Docker Engine](/engine/installation/index.md).
 
-## Step 3: Verify your installation
+## 第三步：验证安装
 
-1. Open a command-line terminal, and run some Docker commands to verify that Docker is working as expected.
+1. 打开命令行终端，运行一些 Docker 命令来验证 Docker 工作正确。
 
-    Some good commands to try are `docker version` to check that you have the latest release installed and `docker ps` to see if you have any running containers. (Probably not, since you just started.)
+    一些建议的命令可以来尝试：`docker version` 来检查是否已安装最新版本， `docker ps` 来检查是否有正在运行中的容器。（因为刚启动，很可能没有运行中容器）
 
-2. Type the `docker run hello-world` command and press RETURN.
+2. 键入 `docker run hello-world` 命令并按回车键。
 
-    The command does some work for you, if everything runs well, the command's
-    output looks like this:
+    如果一切运行正常，命令的执行结果输出如下：
+
 
         $ docker run hello-world
         Unable to find image 'hello-world:latest' locally
@@ -108,26 +108,25 @@ For full instructions on getting Docker for various Linux distributions, see [In
         For more examples and ideas, visit:
         https://docs.docker.com/userguide/
 
-3. Run `docker ps -a` to show all containers on the system.
+3. 运行 `docker ps -a` 命令来展现系统中所有的容器
 
         $ docker ps -a
 
         CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                      PORTS               NAMES
         592376ff3eb8        hello-world         "/hello"            25 seconds ago      Exited (0) 24 seconds ago                       prickly_wozniak
 
-    You should see your `hello-world` container listed in the output for the `docker ps -a` command.
+    你可以发现 `hello-world` 容器出现 `docker ps -a` 命令的输出列表中.
 
-    The command `docker ps` shows only currently running containers. Since `hello-world` already ran and exited, it wouldn't show up with a `docker ps`.
+    `docker ps` 命令只会显示当前运行中的容器。由于 `hello-world` 已经运行并退出，它不会在 `docker ps` 的结果中出现。
 
-## Looking for troubleshooting help?
+## 寻求排错帮助?
 
-Typically, the above steps work out-of-the-box, but some scenarios can cause problems. If your `docker run hello-world` didn't work and resulted in errors, check out [Troubleshooting](/toolbox/faqs/troubleshoot.md) for quick fixes to common problems.
+一般而言，在开箱即用的情况下上面的步骤会被正确执行。但是有一些场景可能引起错误。如果你的 `docker run hello-world` 命令无法正常工作并引发错误，请查看 [故障排查](/toolbox/faqs/troubleshoot.md) 来快速修复常见问题。
 
-## Where to go next
+## 下一步
 
-At this point, you have successfully installed the Docker software. Leave the
-Docker Quickstart Terminal window open. Now, go to the next page to [read a very
-short introduction Docker images and containers](step_two.md).
-
+现在，你已经成功地安装了 Docker。请保持 Docker Quickstart Terminal 窗口打开。现在请前往下一页 [阅读Docker镜像和容器的简单介绍](step_two.md).
 
 &nbsp;
+
+
