@@ -6,55 +6,38 @@ redirect_from:
 - /engine/userguide/basics/
 - /engine/quickstart.md
 - /engine/introduction/understanding-docker/
-title: Docker Overview
+title: Docker 概述
 ---
 
-Docker is an open platform for developing, shipping, and running applications.
-Docker enables you to separate your applications from your infrastructure so
-you can deliver software quickly. With Docker, you can manage your infrastructure
-in the same ways you manage your applications. By taking advantage of Docker's
-methodologies for shipping, testing, and deploying code quickly, you can
-significantly reduce the delay between writing code and running it in production.
+Docker 是一个用于开发、交付和运行应用的开放平台。Docker 允许你把你的应用从基础结构上分离出来，来实现快速的软件交付。使用 Docker，你可以像管理你的应用那样来管理基础环境。利用 Docker 的优势来快速交付、测试和部署代码，可以显著的减少从代码编写到生产环境上线的时间。
 
-## What is the Docker platform?
+## Docker 平台是什么？
 
-Docker provides the ability to package and run an application in a loosely isolated
-environment called a container. The isolation and security allow you to run many
-containers simultaneously on a given host. Because of the lightweight nature of
-containers, which run without the extra load of a hypervisor, you can run more
-containers on a given hardware combination than if you were using virtual machines.
+Docker 提供了在容器（container）中打包应用并在一个松隔离环境中运行应用的能力。这种隔离性和安全性能够允许你在指定的宿主机上同时运行多个容器。由于容器的轻量级特性而且没有额外的虚拟化管理程序的开销，在相同的硬件配置上，可以比运行虚拟机运行更多个容器。
 
-Docker provides tooling and a platform to manage the lifecycle of your containers:
+Docker 提供了工具和平台来管理容器的生命周期：
 
-* Encapsulate your applications (and supporting components) into Docker containers
-* Distribute and ship those containers to your teams for further development
-  and testing
-* Deploy those applications to your production environment, whether it is in a
-  local data center or the Cloud
+* 封装应用（和支持组件）到 Docker 容器中。
+* 为团队分发和交付这些容器，以便进一步的开发和测试。
+* 部署这些容器到生产环境中，可以是本地的数据中心或是云端。
 
-## What is Docker Engine?
+## 什么是 Docker Engine？
 
-_Docker Engine_ is a client-server application with these major components:
+_Docker Engine_ 是一个客户端-服务端架构应用，包含如下的几个重要组件：
 
-* A server which is a type of long-running program called a daemon process.
-
-* A REST API which specifies interfaces that programs can use to talk to the
-    daemon and instruct it what to do.
-
-* A command line interface (CLI) client.
+* 服务器端是一个长时间运行的程序，称其为守护进程（daemon process）
+* REST API 是编程接口来告诉守护进程做什么
+* 命令行接口（CLI）客户端
 
 ![Docker Engine Components Flow](article-img/engine-components-flow.png)
 
-The CLI uses the Docker REST API to control or interact with the Docker daemon
-through scripting or direct CLI commands. Many other Docker applications use the
-underlying API and CLI.
+通过脚本或者直接使用CLI命令，命令行接口利用REST API来控制Docker守护进程或与其交互。有许多的 Docker 应用底层就使用了 API 和 CLI。
 
-The daemon creates and manages Docker _objects_, such as images, containers,
-networks, and data volumes.
+Docker 守护进程会创建和管理 Docker __objects__ （对象），例如镜像(images)、容器(container)、网络(network) 和 数据卷 (data volomue)。
 
-> **Note:** Docker is licensed under the open source Apache 2.0 license.
+> **注：** Docker使用 Apache 2.0 许可证下的开源协议
 
-## What can I use Docker for?
+## Docker 能做什么?
 
 *Fast, consistent delivery of your applications*
 
@@ -300,9 +283,11 @@ called a container format. The default container format is `libcontainer`. In
 the future, Docker may support other container formats by integrating with
 technologies such as BSD Jails or Solaris Zones.
 
-## Next steps
+## 进一步学习
 - Read about [Installing Docker Engine](installation/index.md#installation).
 - Get hands-on experience with the [Get Started With Docker](getstarted/index.md)
     tutorial.
 - Check out examples and deep dive topics in the
     [Docker Engine User Guide](userguide/index.md).
+
+
