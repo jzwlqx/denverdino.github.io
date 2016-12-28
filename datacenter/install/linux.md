@@ -33,7 +33,7 @@ Also make sure the hosts are running one of these operating systems:
 Install the commercially supported Docker Engine on all hosts you want to manage
 with Docker Datacenter.
 
-Log in into each node using ssh, and install CS Docker Engine:
+Log in into each host using ssh, and install CS Docker Engine:
 
 ```bash
 curl -SLf https://packages.docker.com/1.12/install.sh | sh
@@ -59,12 +59,15 @@ docker run --rm -it --name ucp \
 This runs the install command in interactive mode, so that you're prompted
 for any necessary configuration values.
 
+[Learn more about the UCP installation](../ucp/2.9/guides/installation/index.md)
+
 ### Step 4: License your installation
 
 Now that UCP is installed, you need to license it. In your browser, navigate
-to the UCP web UI and upload your license.
+to the UCP web UI, login with your administrator credentials and upload your
+license.
 
-![](../images/try-ddc-1.png)
+![](../images/try-ddc-1.png){: .with-border}
 
 [Get a free trial license if you don't have one](https://store.docker.com/bundles/docker-datacenter).
 
@@ -74,15 +77,15 @@ Join more nodes so that you can manage them from UCP.
 Go to the **UCP web UI**, navigate to the **Resources** page, and go to
 the **Nodes** section.
 
-![](../images/try-ddc-2.png)
+![](../images/try-ddc-2.png){: .with-border}
 
 Click the **Add Node button** to add a new node.
 
-![](../images/try-ddc-3.png)
+![](../images/try-ddc-3.png){: .with-border}
 
 
 Check the 'Add node as a manager' option to join the node as a manager
-to provide replication and make UCP highly available. For an highly available
+to provide replication and make UCP highly available. For a highly available
 installation, make sure you have 3, 5, or 7 manager nodes.
 
 Copy the command to your clipboard, and run in on every node that you want
@@ -110,7 +113,5 @@ by UCP.
 
 ## Where to go next
 
-* [Create and manage users](../ucp/2.0/guides/user-management/create-and-manage-users.md)
 * [Deploy an application](../ucp/2.0/guides/applications/index.md)
-* [Push an image to DTR](../dtr/2.1/guides/repos-and-images/push-an-image.md)
-* [Considerations for a High Availability Deployment](../ucp/2.0/guides/high-availability/index.md)
+* [Considerations for high availability](../ucp/2.0/guides/high-availability/index.md)

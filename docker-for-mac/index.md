@@ -35,9 +35,9 @@ For more about stable and beta channels, see the
     <th style="font-size: x-large; font-family: arial">Beta channel</th>
   </tr>
   <tr valign="top">
-    <td width="50%">This installer is fully baked and tested, and comes with the latest GA version of Docker Engine. <br><br>This is the best channel to use if you want a reliable platform to work with. <br><br>These releases follow a version schedule with a longer lead time than the betas, synched with Docker Engine releases and hotfixes.
+    <td width="50%">This installer is fully baked and tested, and comes with the latest GA version of Docker Engine. <br><br>This is the best channel to use if you want a reliable platform to work with. <br><br>These releases follow a version schedule with a longer lead time than the betas, synched with Docker Engine releases and hotfixes.<br><br>On the stable channel, you can select whether to send usage statistics and other data.
     </td>
-    <td width="50%">This installer offers cutting edge features and comes with the experimental version of Docker Engine, which is described in the <a href="https://github.com/docker/docker/tree/master/experimental" target="_blank">Docker Experimental Features README</a> on GitHub.<br><br>This is the best channel to use if you want to experiment with features we are working on as they become available, and can weather some instability and bugs. This channel is a continuation of the beta program, where you can provide feedback as the apps evolve. Releases are typically more frequent than for stable, often one or more per month.</td>
+    <td width="50%">This installer offers cutting edge features and comes with the experimental version of Docker Engine, described in the <a href="https://github.com/docker/docker/tree/master/experimental">Docker Experimental Features README</a> on GitHub.<br><br>This is the best channel to use if you want to experiment with features under development, and can weather some instability and bugs. This channel is a continuation of the beta program, where you can provide feedback as the apps evolve. Releases are typically more frequent than for stable, often one or more per month. <br><br>We collect usage data on betas across the board.</td>
   </tr>
   <tr valign="top">
   <td width="50%">
@@ -53,11 +53,11 @@ For more about stable and beta channels, see the
 
 >**Important Notes**:
 >
->- Docker for Mac requires macOS 10.10.3 Yosemite or newer running on a 2010 or
->    newer Mac, with Intel's  hardware support for MMU virtualization. Please see
->    [What to know before you install](index.md#what-to-know-before-you-install)
->    for a full list of prerequisites.
->
+>- Docker for Mac requires OS X El Capitan 10.11 or newer macOS release running on a 2010 or
+    newer Mac, with Intel's  hardware support for MMU virtualization. The app will run on 10.10.3 Yosemite, but with limited support. Please see
+    [What to know before you install](index.md#what-to-know-before-you-install)
+    for a full explanation and list of prerequisites.
+
 >- You can switch between beta and stable versions, but you must have only one
 >    app installed at a time. Also, you will need to save images and export
 >    containers you want to keep before uninstalling the current version before
@@ -72,7 +72,7 @@ For more about stable and beta channels, see the
 <p />
 * **System Requirements**: Docker for Mac will launch only if all of these requirements are met.
 
-	- Mac must be a 2010 or newer model, with Intel's hardware support for memory management unit (MMU) virtualization; i.e., Extended Page Tables (EPT)
+	- Mac must be a 2010 or newer model, with Intel's hardware support for memory management unit (MMU) virtualization; i.e., Extended Page Tables (EPT) and Unrestricted Mode.
 
   - OS X El Capitan 10.11 and newer macOS releases are supported. At a minimum, Docker for Mac requires macOS Yosemite 10.10.3 or newer, with the caveat that going forward 10.10.x is a use-at-your-own risk proposition.
 
@@ -212,8 +212,8 @@ the total available memory on your Mac. You can increase the RAM on the app to
 get faster performance by setting this number higher (for example to `3`) or
 lower (to `1`) if you want Docker for Mac to use less memory.
 
->**Tip: Beta dialogs** &mdash; Starting with Beta 31, CPUs and Memory settings
-are on the Advanced dialog, as shown here.
+>**Tip: Beta dialogs** &mdash; Starting with Beta 31, **CPUs** and **Memory** settings
+are on the Advanced dialog. Starting with Beta 33, you can specify the **storage location** of the Linux volume; i.e., where containers and images are stored. These settings are shown below.
 >
 >![CPUs and Memory settings UI
 starting at Beta 31](images/settings-advanced-beta.png)
@@ -222,7 +222,7 @@ starting at Beta 31](images/settings-advanced-beta.png)
 
 ![Advanced Preference settings-advanced](images/settings-advanced.png)
 
-#### Custom Registries
+#### Custom registries
 
 As an alternative to using [Docker Hub](https://hub.docker.com/) to store your
 public or private images or [Docker Trusted
@@ -255,16 +255,14 @@ own **Daemon** tab, including basic and advanced options.
 #### Daemon Basic (experimental mode and registries)
 
 By default, Docker for Mac Beta releases use the experimental version of Docker
-Engine, described in the <a
-href="https://github.com/docker/docker/tree/master/experimental"
-target="_blank">Docker Experimental Features README</a> on GitHub. Starting with
+Engine, described in the [Docker Experimental Features README](https://github.com/docker/docker/tree/master/experimental) on GitHub. Starting with
 Beta 31, you can toggle **experimental mode** on and off. If you toggle it off,
 Docker for Mac Beta uses the current generally available release of Docker
 Engine, the same as Stable Docker for Mac versions uses.
 
 You can check whether you are running experimental mode or not by typing `docker
 version` on the command line. Experimental mode is listed under `Server` data.
-If `Experimental` is `true`, the Docker is running in experimental mode, as
+If `Experimental` is `true`, then Docker is running in experimental mode, as
 shown here. (If `false`, Experimental mode is off.)
 
 ```bash
@@ -287,8 +285,8 @@ Server:
  Experimental: true
 ```
 
-You can use Docker to set up your own insecure
-[registry](/registry/introduction/). For details on this, see [Custom
+You can use Docker to set up your own
+[registries](/registry/introduction/). For details on this, see [Custom
 Registries](#custom-registries).
 
 ![Daemon](images/settings-advanced-experimental-beta.png)
@@ -298,7 +296,7 @@ Registries](#custom-registries).
 On the **Daemon -> Advanced dialog**, you can directly configure the daemon from
 the JSON file, and determine entirely how your containers will run. For a full
 list of options on the Docker daemon, see <a
-href="https://docs.docker.com/engine/reference/commandline/dockerd/"
+href="/engine/reference/commandline/dockerd/"
 target="_blank">daemon</a> in the Docker Engine command line reference.
 
 After editing the daemon configuration , click **Apply & Restart** to save it

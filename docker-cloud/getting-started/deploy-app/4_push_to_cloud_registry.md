@@ -13,14 +13,23 @@ In this step you will take the image that you built in the previous step, and pu
 
 In step 2, you set your Docker Cloud username as an environment variable called **DOCKER_ID_USER**. If you skipped this step, change the `$DOCKER_ID_USER` to your Docker ID username before running this command.
 
+> **Note**: By default, the `docker-cloud` CLI uses your default user namespace,
+meaning the repositories, nodes, and services associated with your individual
+Docker ID account name. To use the CLI to interact with objects that belong to
+an [organization](../../orgs.md), prefix these commands with
+`DOCKERCLOUD_NAMESPACE=my-organization`. See the [CLI documentation](../../installing-cli.md#use-the-docker-cloud-cli-with-an-organization) for more information.
+
+
 First tag the image. Tags in this case denote different builds of an image.
 
 **Python quickstart**
+
 ```bash
 $ docker tag quickstart-python $DOCKER_ID_USER/quickstart-python
 ```
 
 **Go quickstart**
+
 ```bash
 $ docker tag quickstart-go $DOCKER_ID_USER/quickstart-go
 ```
@@ -28,11 +37,13 @@ $ docker tag quickstart-go $DOCKER_ID_USER/quickstart-go
 Next, push the tagged image to the repository.
 
 **Python quickstart**
+
 ```
 $ docker push $DOCKER_ID_USER/quickstart-python
 ```
 
 **Go quickstart**
+
 ```
 $ docker push $DOCKER_ID_USER/quickstart-go
 ```
