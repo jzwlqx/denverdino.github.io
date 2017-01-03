@@ -1,11 +1,11 @@
 ---
-标题： 用Ansible
+标题：使用用Ansible运行Docker
 描述: 通过Ansible安装和使用Docker
 关键字: ansible, 安装, 使用, docker,  文档
 ---
 
 > **注意**:
-> Please note this is a community contributed installation path.
+> 这是由社区贡献的
 
 ## 前提条件
 

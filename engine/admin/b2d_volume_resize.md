@@ -16,7 +16,7 @@ you can try.
 
 The `boot2docker` command reads its configuration from the `$BOOT2DOCKER_PROFILE` if set, or `$BOOT2DOCKER_DIR/profile` or `$HOME/.boot2docker/profile` (on Windows this is `%USERPROFILE%/.boot2docker/profile`).
 
-1. View the existing configuration, use the `boot2docker config` command.
+1. 使用`boot2docker config`命令查看当前配置
 
         $ boot2docker config
         # boot2docker profile filename: /Users/mary/.boot2docker/profile
