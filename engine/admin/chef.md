@@ -15,7 +15,7 @@
 
 ## 安装
 
-cookbook可以在[Chef Supermarket](https://supermarket.chef.io/cookbooks/docker) 搜索到，并且通过你喜欢或者擅长的cookbook依赖工具下载。
+可以在[Chef Supermarket](https://supermarket.chef.io/cookbooks/docker) 搜索到docker cookbook，并且通过你喜欢或者擅长的cookbook依赖工具下载。
 
 源代码可以在
 [GitHub](https://github.com/someara/chef-docker)找到.
