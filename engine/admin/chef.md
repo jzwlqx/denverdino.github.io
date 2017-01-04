@@ -1,9 +1,9 @@
 ---
-标题：使用用Chef运行Docker
-描述: 通过Ansible安装和使用Docker
-关键字: Chef, 安装, 使用, docker,  文档
-转自:
+description: Installation and using Docker via Chef
+keywords: chef, installation, usage, docker,  documentation
+redirect_from:
 - /engine/articles/chef/
+title: Use Chef
 ---
 
 > **注意**:

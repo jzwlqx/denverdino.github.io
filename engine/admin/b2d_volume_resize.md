@@ -1,7 +1,8 @@
 ---
-题目： 调整Boot2Docker的数据卷大小
-描述： 使用GParted调整VirtualBox中Boot2Docker的数据卷大小
-关键字：boot2docker, 数据卷,  virtualbox
+description: Resizing a Boot2Docker volume in VirtualBox with GParted
+keywords: boot2docker, volume,  virtualbox
+published: false
+title: Resize a Boot2Docker volume
 ---
 
 # 如何处理Boot2Docker抛出的错误"no space left on device"？
