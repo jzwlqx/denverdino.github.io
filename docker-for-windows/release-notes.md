@@ -22,6 +22,17 @@ about both kinds of releases, and download stable and beta product installers at
 
 ## Stable Release Notes
 
+### Docker for Windows 1.12.5, 2016-12-20 (stable)
+
+**Upgrades**
+
+- Docker 1.12.5
+- Docker Compose 1.9.0
+
+### Skipped Docker for Windows 1.12.4 (stable)
+
+We did not distribute a 1.12.4 stable release
+
 ### Docker for Windows 1.12.3, 2016-11-09 (stable)
 
 **New**
@@ -208,6 +219,72 @@ about both kinds of releases, and download stable and beta product installers at
 
 ## Beta Release Notes
 
+### Beta 34 Release Notes (2016-12-20 1.13.0-rc4-beta34)
+
+**New**
+
+- Basic UI for Daemon.json editing
+
+**Upgrades**
+
+- Docker 1.13.0-rc4
+- Linux Kernel 4.8.15
+
+**Bug fixes and minor changes**
+
+- Improved Proxy UI
+- Better diagnostics of Windows containers
+- Default Experimental/Debug flags are now set on beta for Windows Containers
+- Windows Containers Reset to default script improvements
+- About Box is now Copy/Paste enabled
+
+### Beta 33 Release Notes (2016-12-15 1.13.0-rc3-beta33)
+
+>**Important Note:** Plugins installed using the experimental "managed plugins" feature in Docker 1.12 must be removed/uninstalled before upgrading.
+
+**New**
+
+- VHDX file containing images and non-host mounted volumes can be moved (using "advanced" tab in the UI)
+
+**Upgrades**
+
+- Linux Kernel 4.8.14
+
+**Bug fixes and minor changes**
+
+- Bugsnag reports should work again
+- Fixed a memory leak related to logs and Windows Containers
+
+### Beta 32.1 Release Notes (2016-12-09 1.13.0-rc3-beta32.1)
+
+>**Important Note:** Plugins installed using the experimental "managed plugins" feature in Docker 1.12 must be removed/uninstalled before upgrading.
+
+**Hotfixes**
+
+- Fix Hyper-V Windows Feature detection
+
+**New**
+
+- Windows containers settings panel
+- Windows containers: Restart from the settings panel
+- Windows containers: Factory default
+- Windows containers: Modify Daemon.json
+- Windows containers: Proxy settings can be modified
+- Support for arm, aarch64, ppc64le architectures using qemu
+
+**Upgrades**
+
+- Docker 1.13.0-rc3
+- Docker Machine 0.9.0-rc2
+- Linux Kernel 4.8.12
+
+**Bug fixes and minor changes**
+
+- Time drifts between Windows and Linux containers should disapear
+- VPNKit: Improved diagnostics
+- Improvements in drive sharing code
+- Removed the legacy "Disable oplocks" trick for enabling Windows Containers on older insider previews
+
 ### Beta 32 Release Notes (2016-12-07 1.13.0-rc3-beta32)
 
 >**Important Note**:
@@ -238,8 +315,6 @@ dialogs](index.md#about-the-docker-windows-containers-specific-dialogs).)
 - VPNKit: Improved diagnostics
 - Improvements in drive sharing code
 - Removed the legacy "Disable oplocks" trick for enabling Windows Containers on older insider previews
-
-
 
 ### Beta 31 Release Notes (2016-12-01 1.13.0-rc2-beta31)
 
@@ -815,9 +890,9 @@ This Beta release includes some significant changes:
 * Due to limitation in the Windows NAT implementation, co-existence with other NAT prefixes needs to be carefully managed. See [NAT Configuration](troubleshoot.md#nat-configuration) in [Troubleshooting](troubleshoot.md) for more details.
 
 
-### Beta 11b Hot Fix Release (2016-05-11 1.11.1-beta11b)
+### Beta 11b Release (2016-05-11 1.11.1-beta11b)
 
-**Hot fixes**
+**Hotfixes**
 
 * Fixed an issue with named pipe permissions that prevented Docker from starting
 

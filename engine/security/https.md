@@ -4,11 +4,8 @@ keywords: docker, docs, article, example, https, daemon, tls, ca,  certificate
 redirect_from:
 - /engine/articles/https/
 - /articles/https/
-title: Protect the Docker daemon socket
+title: 保护Docker daemon
 ---
-
-By default, Docker runs via a non-networked Unix socket. It can also
-optionally communicate using an HTTP socket.
 
 默认情况下，Docker通过Unix socket提供服务，也可以选择使用HTTP提供服务。
 

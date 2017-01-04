@@ -28,10 +28,11 @@ title: 使用证书访问Docker Registry
 
 ```
     /etc/docker/certs.d/        <-- 证书目录
-    └── localhost               <-- Hostname（域名）
+    └── localhost:5000          <-- Hostname:port（Hostname可以是域名）
        ├── client.cert          <-- 客户端证书
        ├── client.key           <-- 客户端证书的Key
        └── localhost.crt        <-- 颁发Registry证书的机构证书。
+
 ```
 
 接下来的示例和操作系统相关，只是为了说明。你需要查询自己操作系统以创建对应操作系统的证书链。

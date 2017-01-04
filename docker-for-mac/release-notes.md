@@ -17,6 +17,17 @@ Release notes for _stable_ and _beta_ releases are listed below. You can learn a
 
 ## Stable Release Notes
 
+### Docker for Mac 1.12.5, 2016-12-20 (stable)
+
+**Upgrades**
+
+- Docker 1.12.5
+- Docker Compose 1.9.0
+
+### Skipped Docker for Mac 1.12.4 (stable)
+
+We did not distribute a 1.12.4 stable release
+
 ### Docker for Mac 1.12.3, 2016-11-09 (stable)
 
 **Upgrades**
@@ -49,7 +60,7 @@ Release notes for _stable_ and _beta_ releases are listed below. You can learn a
 
 - Added UI when switching channel to prevent user losing containers and settings
 
-- Check disk capacity before toolbox import
+- Check disk capacity before Toolbox import
 
 - Import certificates in `etc/ssl/certs/ca-certificates.crt`
 
@@ -201,6 +212,70 @@ events or unexpected unmounts.
 * Docker Compose 1.8.0
 
 ## Beta Release Notes
+
+### Beta 34.1 Release Notes (2016-12-22 1.13.0-rc4-beta34.1)
+
+>**Important Note:** Plugins installed using the experimental "managed plugins" feature in Docker 1.12 must be removed/uninstalled before upgrading.
+
+**Hotfix**
+
+- Fixed issue where Docker would fail to start after importing containers from Toolbox
+
+**Upgrades**
+
+- qcow-tool 0.7.2
+
+### Beta 34 Release Notes (2016-12-20 1.13.0-rc4-beta34)
+
+>**Important Note:** Plugins installed using the experimental "managed plugins" feature in Docker 1.12 must be removed/uninstalled before upgrading.
+
+**New**
+
+- Change UI for path location and open finder
+- Trim compact on reboot
+- Use more DNS servers, respect order
+
+**Upgrades**
+
+- Docker 1.13.0-rc4
+- Linux Kernel 4.8.15
+
+**Bug fixes and minor improvements**
+
+- New Daemon icon
+- Support Copy/Paste in About box
+- Fix advanced daemon check json changes
+- Auto update polling every 24h
+
+### Beta 33.1 Release Notes (2016-12-16 1.13.0-rc3-beta33.1)
+
+>**Important Note:** Plugins installed using the experimental "managed plugins" feature in Docker 1.12 must be removed/uninstalled before upgrading.
+
+**Hotfix**
+
+- Fixed issue where sometimes TRIM would cause the VM to hang
+
+### Beta 33 Release Notes (2016-12-15 1.13.0-rc3-beta33)
+
+>**Important Note:** Plugins installed using the experimental "managed plugins" feature in Docker 1.12 must be removed/uninstalled before upgrading.
+
+**New**
+
+- You can now edit filesharing paths
+- Memory can be allocated with 256 MiB steps
+- The storage location of the Linux volume can now be moved
+- More explicit proxy settings
+- Proxy can now be completly disabled
+- You can switch daemon tabs without losing your settings
+- You can't edit settings while docker is restarting
+
+**Upgrades**
+
+- Linux Kernel 4.8.14
+
+**Bug fixes and minor improvements**
+
+- Kernel boots with `vsyscall=emulate arg` and `CONFIG_LEGACY_VSYSCALL` is set to `NONE` in Moby
 
 ### Beta 32 Release Notes (2016-12-07 1.13.0-rc3-beta32)
 
@@ -834,7 +909,7 @@ The `osxfs` file system now persists ownership changes in an extended attribute.
 * More reliable DNS forwarding over UDP and TCP
 * UDP ports can be proxied over vsock
 * Fixed EADDRINUSE (manifesting as errno 526) when ports are re-used
-* Send ICMP when asked to not fragment and we can’t guarantee it
+* Send ICMP when asked to not fragment and we can't guarantee it
 * Fixed parsing of UDP datagrams with IP socket options
 * Drop abnormally large ethernet frames
 * Improved HyperKit logging
@@ -1091,9 +1166,9 @@ work yet.
 - Clean up logging format
 
 - Packaging
-  - Create /usr/local if it doesn’t exist
+  - Create /usr/local if it doesn't exist
   - docker-uninstall improvements
-  - Remove docker-select as it’s no longer used
+  - Remove docker-select as it's no longer used
 
 
 - Hypervisor
