@@ -1,17 +1,16 @@
 ---
-description: Lists the installation methods
-keywords: Docker install
+description: 安装方式列表
+keywords: Docker 安装
 redirect_from:
 - /installation/
 - /engine/installation/linux/frugalware/
 - /engine/installation/frugalware/
-title: Install Docker Engine
+title: 安装 Docker Engine
 ---
 
-Docker Engine is supported on Linux, Cloud, Windows, and macOS. Installation
-instructions are available for the following:
+Docker Engine 支持 Linux, Cloud, Windows 与 macOS, 安装说明适用于以下各项:
 
-## On Linux
+## Linux
 * [Arch Linux](linux/archlinux.md)
 * [CentOS](linux/centos.md)
 * [CRUX Linux](linux/cruxlinux.md)
@@ -24,43 +23,37 @@ instructions are available for the following:
 * [openSUSE and SUSE Linux Enterprise](linux/SUSE.md)
 * [Ubuntu](linux/ubuntulinux.md)
 
-If your linux distribution is not listed above, don't give up yet. To try out
-Docker on a distribution that is not listed above, go here:
-[Installation from binaries](binaries.md).
+如果你的 linux 发行版不在其中, 请不要立刻放弃, 试试看: [从二进制文件安装 docker](binaries.md).
 
 
-## On macOS and Windows
+## macOS 与 Windows
 
 * [Docker for Mac](/docker-for-mac/)
 * [Docker for Windows](/docker-for-windows/)
 
 
-## On Cloud
+## 云端
 
-You can use Docker Cloud to automatically provision and manage your cloud
-instances:
+你可以使用 Docker Cloud 来自动配置和管理你的云实例:
 
-* [Amazon Web Services setup guide](link-aws.md)
-* [DigitalOcean setup guide](link-do.md)
-* [Microsoft Azure setup guide](link-azure.md)
-* [Packet setup guide](link-packet.md)
-* [SoftLayer setup guide](link-softlayer.md)
+* [Amazon Web 服务安装指南](link-aws.md)
+* [DigitalOcean 安装指南](link-do.md)
+* [Microsoft Azure 安装指南](link-azure.md)
+* [Packet 安装指南](link-packet.md)
+* [SoftLayer 安装指南](link-softlayer.md)
 * [Use the Docker Cloud Agent to Bring your Own Host](byoh.md)
 
-You can also use our official Docker Editions if you'd like to manually manage
-your cloud instances:
+如果您希望手工管理您的云实例, 可以使用官方 Docker 版本:
 
 * [Docker for AWS](/docker-for-aws/)
 * [Docker for Azure](/docker-for-azure/)
 
 
-## Prior releases
+## 以前的版本  
 
-Instructions for installing prior releases of Docker can be found in the
-[Docker archives](/docsarchive/).
+以前版本的 Docker 的安装说明可以在 [Docker 归档](/docsarchive/) 中找到.
 
 
-## Get started
+## 开始使用
 
-After setting up Docker, try learning the basics over at
-[Getting started with Docker](/engine/getstarted/).
+在设置好 Docker 之后, 请在 [Docker 入门](/engine/getstarted/) 开始学习基础知识.
