@@ -77,7 +77,7 @@ $ docker service inspect --format="{{json .Endpoint.Spec.Ports}}" my-web
 The output shows the `<TARGET-PORT>` from the containers and the
 `<PUBLISHED-PORT>` where nodes listen for requests for the service.
 
-### Publish a port for TCP only or UCP only
+### Publish a port for TCP only or UDP only
 
 By default, when you publish a port, it is a TCP port. You can
 specifically publish a UDP port instead of or in addition to a TCP port. When
@@ -119,7 +119,7 @@ the swarm. The swarm nodes can reside on a private network that is accessible to
 the proxy server, but that is not publicly accessible.
 
 You can configure the load balancer to balance requests between every node in
-the swarm even if the there are no tasks scheduled on the node. For example, you
+the swarm even if there are no tasks scheduled on the node. For example, you
 could have the following HAProxy configuration in `/etc/haproxy/haproxy.cfg`:
 
 ```bash

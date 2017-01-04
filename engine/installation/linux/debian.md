@@ -8,9 +8,9 @@ title: Install Docker on Debian
 
 Docker is supported on the following versions of Debian:
 
- - [*Debian testing stretch (64-bit)*](debian.md#debian-wheezy-stable-7-x-64-bit)
- - [*Debian 8.0 Jessie (64-bit)*](debian.md#debian-jessie-80-64-bit)
- - [*Debian 7.7 Wheezy (64-bit)*](debian.md#debian-wheezy-stable-7-x-64-bit) (backports required)
+ - Debian testing stretch
+ - Debian 8.0 Jessie
+ - Debian 7.7 Wheezy (backports required)
 
  >**Note**: If you previously installed Docker using `APT`, make sure you update
  your `APT` sources to the new `APT` repository.
@@ -71,7 +71,9 @@ from the new repository:
 
  5. Add the new `GPG` key.
 
-         $ apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
+         $ sudo apt-key adv \
+               --keyserver hkp://ha.pool.sks-keyservers.net:80 \
+               --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
 
  6. Open the `/etc/apt/sources.list.d/docker.list` file in your favorite editor.
 
