@@ -48,8 +48,6 @@ Or
 ## 如何工作
 
 下面的例子展示了 `svendowideit/ambassador` 容器自动完成的工作（包括了少量的 `sed` 操作）。
-The following example shows what the `svendowideit/ambassador` container
-does automatically (with a tiny amount of `sed`)
 
 在Redis服务运行的Docker主机（192.168.1.52）上：
 
