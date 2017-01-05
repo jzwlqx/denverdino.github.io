@@ -14,7 +14,7 @@ Docker鼓励支持服务的可移植性，而非以硬编码的方式在服务�
 
     (consumer) --> (redis-ambassador) --> (redis)
 
-Or
+或者
 
     (consumer) --> (redis-ambassador) ---network---> (redis-ambassador) --> (redis)
 
@@ -107,9 +107,9 @@ ambassador容器中的 `socat` 脚本利用这些环境变量将Redis服务暴�
     redis 172.17.0.160:6379> ping
     PONG
 
-## svendowideit/ambassador Dockerfile
+## svendowideit/ambassador镜像的 Dockerfile
 
- `svendowideit/ambassador` 镜像基于 `alpine:3.2` 镜像，并安装了 `socat` 。启动容器时，会运行一小段 `sed` 脚本来解析与连接相关的环境变量（可能有多个），并以此建立端口转发。在远程主机上，需要通过 `-e` 命令行选项来设置这些环境变量。
+ `svendowideit/ambassador`基于 `alpine:3.2` 镜像，并安装了 `socat` 。启动容器时，会运行一小段 `sed` 脚本来解析与连接相关的环境变量（可能有多个），并以此建立端口转发。在远程主机上，需要通过 `-e` 命令行选项来设置这些环境变量。
 
     --expose 1234 -e REDIS_PORT_1234_TCP=tcp://192.168.1.52:6379
 
