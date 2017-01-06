@@ -4,7 +4,7 @@ keywords: trust, security, notary, deployment
 title: Deploying Notary Server with Compose
 ---
 
-最简单的部署Notary Server方式是通过Docker Compose。遵循本页的步骤，你需要先安装后 [安装 Docker Compose](/compose/install.md).
+最简单的部署Notary Server方式是通过Docker Compose。遵循本页的步骤，你需要先 [安装 Docker Compose](/compose/install.md).
 
 1. 克隆  Notary 仓库
 

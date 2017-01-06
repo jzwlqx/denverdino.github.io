@@ -4,7 +4,7 @@ keywords: trust, security, docker,  index
 title: Use trusted images
 ---
 
-以下主题可见:
+查看以下几个内容:
 
 * [Docker 内容信任](content_trust.md)
 * [管理内容信任秘钥](trust_key_mng.md)

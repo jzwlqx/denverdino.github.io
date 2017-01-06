@@ -30,15 +30,13 @@ Docker Engine 支持使用 `targets/releases` 代理作为一个信任的镜像t
 更多详情信息关于如何使用Notary，超出了默认Doceker内容安全的用例场景，请参看
 [Notary 命令行文档](/notary/getting_started.md).
 
-主要当发布和枚举代理使用Notary客户端时会有变化，Docker Hub的证书是需要的。
-Note that when publishing and listing delegation changes using the Notary client,
-your Docker Hub credentials are required.
+注意当发布和枚举代理使用Notary客户端时会有变化，Docker Hub的证书是需要的。
 
 ## 生成代理秘钥
 
 你的协作者需要生产一个私钥（RSA或ECDSA），然后给你公钥，你可以把公钥加入到`targets/releases`代理。
 
-最简单的方式为他们创建秘钥是通过OpenSSL.这里是一个如何通过生成2048位RSA（所有的RSA秘钥都至少2048位）部分密码的示例。
+最简单的方式是通过OpenSSL为他们创建秘钥.这里是一个如何通过生成2048位RSA（所有的RSA秘钥都至少2048位）密码的示例。
 
 ```
 $ openssl genrsa -out delegation.key 2048
@@ -87,11 +85,11 @@ $ notary publish docker.io/<username>/<imagename>
 ```
 
 上述的示例展示了添加代理`targets/releases`到镜像仓库的请求过程，如果它不存在的话。
-确保使用`targets/releases`-Notary支持多个代理角色，这样如果你搞错代理名称，Notary命令行也不会出错。
-不管怎样，Docker Engine支持从`targets/releases`只读。
+确保使用`targets/releases`- Notary支持多个代理角色，这样如果你搞错代理名称，Notary命令行也不会出错。
+不管怎样，Docker Engine支持只从`targets/releases`读取。
 
 它也将协助者的公钥加入到代理，使得一旦拥有相对于公钥的私钥，他们可以对`targets/releases` 代理进行签名。
-发布这些变化告诉服务器关于对`targets/releases`代理的变化。
+发布这些变化可以告诉服务器关于对`targets/releases`代理的变化。
 发布完，可以查看代理信息来保证你正确地添加了秘钥到`targets/releases`：
 
 ```
